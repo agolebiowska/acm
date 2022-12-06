@@ -6,10 +6,3 @@ rules:
 - apiGroups: [""]
   resources: ["namespaces"]
   verbs: ["get", "watch", "list"]
-
-kind: NetworkPolicy
-apiVersion: networking.k8s.io/v1
-metadata:
-  name: default-deny-all-traffic
-spec:
-  podSelector: {}
